@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.header-video-container {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  max-height: 750px;
+}
+
+.header-video-container .header-video {
+  position: absolute;
+  width: 100%;
+}
+
+.header-video-container-content {
+  z-index: 1;
+  position: sticky;
+  margin: 0 auto;
+  margin-top: -750px;
+  width: 80%;
+  height: 100%;
+}
+
+.header-video-container-content .small-list {
+  margin-top: 10px;
+}
+
+.header-video-container-content .small-list li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.header-video-container-content .small-list li a {
+  font-size: .9rem;
+  color: #ffffffbf;
+  text-decoration: none;
+  transition: all linear .2s;
+}
+
+.header-video-container-content .small-list li a:hover {
+  color: #fff;
+}
+
+.header-video-container-content .main-list {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.header-video-container-content .main-list li {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.header-video-container-content .main-list li:nth-child(1) {
+  margin-right: 5%;
+}
+
+.header-video-container-content .main-list li:nth-child(2), .header-video-container-content .main-list li:nth-child(3), .header-video-container-content .main-list li:nth-child(4), .header-video-container-content .main-list li:nth-child(5), .header-video-container-content .main-list li:nth-child(6), .header-video-container-content .main-list li:nth-child(7) {
+  margin-right: -4px;
+  position: relative;
+  top: -15px;
+  padding: 25px 15px;
+  transition: background linear .15s;
+}
+
+.header-video-container-content .main-list li:nth-child(2):hover, .header-video-container-content .main-list li:nth-child(3):hover, .header-video-container-content .main-list li:nth-child(4):hover, .header-video-container-content .main-list li:nth-child(5):hover, .header-video-container-content .main-list li:nth-child(6):hover, .header-video-container-content .main-list li:nth-child(7):hover {
+  background: #2671ad;
+}
+
+.header-video-container-content .main-list li:nth-child(8) {
+  width: 180px;
+  background: #2671ad;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  top: -15px;
+  transition: background .15s linear;
+  margin-left: 12%;
+}
+
+.header-video-container-content .main-list li:nth-child(8):hover {
+  background: #11538a;
+}
+
+.header-video-container-content .main-list li:nth-child(8) i {
+  font-size: 1rem;
+}
+
+.header-video-container-content .main-list li:nth-child(8) p {
+  float: right;
+}
+
+.header-video-container-content .main-list li:nth-child(9) {
+  border-radius: 50px;
+  background: #fff;
+  padding: 10px 5px;
+  width: 82px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.header-video-container-content .main-list li:nth-child(9) a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.header-video-container-content .main-list li:nth-child(9) a:first-child {
+  color: #000;
+}
+
+.header-video-container-content .main-list li:nth-child(9) a:last-child {
+  margin-left: 7px;
+  border-radius: 100%;
+  padding: 6px;
+  background: #000;
+  color: #fff;
+}
+
+#submenu {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 400px;
+  transition: all linear .15s;
+  top: 69px;
+  left: 0;
+  background: #2671ad;
+  color: #000;
+  transition: all linear 150ms;
+}
+
+#submenu li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  transition: background linear 150ms;
+}
+
+#submenu li:hover {
+  background: #367db8;
+}
+
+#submenu li a {
+  color: #fff;
+  text-decoration: none;
+  font-width: 400;
+  font-size: 20px;
+}
+
+#submenu li:nth-child(1) {
+  padding: 10px;
+}
+
+#submenu li:nth-child(2) {
+  margin: 14px 0;
+  padding: 10px;
+}
+
+#submenu li:nth-child(3) {
+  margin: -15px 0;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: 89px;
+    background: #fff;
+  }
+  to {
+    opacity: 1;
+    top: 69px;
+    background: #367db8;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    top: 69px;
+    background: #367db8;
+  }
+  to {
+    top: 89px;
+    background: #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
