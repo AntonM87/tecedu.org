@@ -118,11 +118,11 @@
     }
 }
 
-#submenu {
+ul#submenu {
     display: none;
     opacity: 0;
     position: absolute;
-    width: 400px;
+    width: 300px;
     transition: all linear .15s;
     top: 69px;
     left: 0;
@@ -133,8 +133,9 @@
         padding: 0;
         margin: 0;
         display: block;
-        transition: background linear 150ms;
-        &:hover{
+        transition: background linear 100ms;
+        width: 100%;
+        &:hover {
             background: #367db8;
         }
         a {
@@ -142,10 +143,11 @@
             text-decoration: none;
             font: {
                 width: 400;
-                size: 20px;
+                size: 1rem;
             }
         }
         &:nth-child(1) {
+            margin: 14px 0;
             padding: 10px;
         }
         &:nth-child(2) {
@@ -156,27 +158,50 @@
             margin: -15px 0;
             padding: 10px;
         }
+        &:nth-child(4) {
+            margin: 15px 0 0 0;
+            padding: 10px;
+        }
+        &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(10),&:nth-child(11),&:nth-child(12) {
+            padding: 10px;
+        }
+        &:nth-child(9) {
+            margin: -13px 0 0 0;
+            padding: 10px 10px 10px 0px;
+            position: relative;
+            left: 0%;
+            background: #2671ad;
+            border-radius: 0px;
+            &:hover {
+                background: #367db8;
+            }
+            a {
+                border-radius: 0px;
+                background: none;
+            }
+        }
     }
 }
 
-@keyframes fadeIn{
-    from{
+@keyframes fadeIn {
+    from {
         opacity: 0;
         top: 89px;
         background: #fff
     }
-    to{
+    to {
         opacity: 1;
         top: 69px;
         background: #367db8
     }
 }
-@keyframes fadeOut{
-    from{
+
+@keyframes fadeOut {
+    from {
         top: 69px;
         background: #367db8
     }
-    to{
+    to {
         top: 89px;
         background: #fff;
     }

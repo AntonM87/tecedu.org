@@ -129,11 +129,11 @@
   color: #fff;
 }
 
-#submenu {
+ul#submenu {
   display: none;
   opacity: 0;
   position: absolute;
-  width: 400px;
+  width: 300px;
   transition: all linear .15s;
   top: 69px;
   left: 0;
@@ -142,36 +142,65 @@
   transition: all linear 150ms;
 }
 
-#submenu li {
+ul#submenu li {
   padding: 0;
   margin: 0;
   display: block;
-  transition: background linear 150ms;
+  transition: background linear 100ms;
+  width: 100%;
 }
 
-#submenu li:hover {
+ul#submenu li:hover {
   background: #367db8;
 }
 
-#submenu li a {
+ul#submenu li a {
   color: #fff;
   text-decoration: none;
   font-width: 400;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
-#submenu li:nth-child(1) {
-  padding: 10px;
-}
-
-#submenu li:nth-child(2) {
+ul#submenu li:nth-child(1) {
   margin: 14px 0;
   padding: 10px;
 }
 
-#submenu li:nth-child(3) {
+ul#submenu li:nth-child(2) {
+  margin: 14px 0;
+  padding: 10px;
+}
+
+ul#submenu li:nth-child(3) {
   margin: -15px 0;
   padding: 10px;
+}
+
+ul#submenu li:nth-child(4) {
+  margin: 15px 0 0 0;
+  padding: 10px;
+}
+
+ul#submenu li:nth-child(5), ul#submenu li:nth-child(6), ul#submenu li:nth-child(7), ul#submenu li:nth-child(8), ul#submenu li:nth-child(10), ul#submenu li:nth-child(11), ul#submenu li:nth-child(12) {
+  padding: 10px;
+}
+
+ul#submenu li:nth-child(9) {
+  margin: -13px 0 0 0;
+  padding: 10px 10px 10px 0px;
+  position: relative;
+  left: 0%;
+  background: #2671ad;
+  border-radius: 0px;
+}
+
+ul#submenu li:nth-child(9):hover {
+  background: #367db8;
+}
+
+ul#submenu li:nth-child(9) a {
+  border-radius: 0px;
+  background: none;
 }
 
 @keyframes fadeIn {
